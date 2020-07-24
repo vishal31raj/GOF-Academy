@@ -1,0 +1,164 @@
+.navbar {
+    border-bottom: #005270 1px solid;
+}
+
+.nav-item {
+    margin-left: 8px;
+}
+
+.header-tab {
+    font-weight: bold;
+}
+
+.new-user {
+    color:  #005270;
+    text-align: center;
+}
+
+.signup-button {
+    border-radius: 25px;
+}
+
+.btn-block {
+    border-radius: 25px;
+    background-color: #005270;
+    border-color: #005270;
+    display: block;
+}
+
+.btn-block:hover {
+    background-color: #fff;
+    color: #005270;
+    border-color: #005270;
+}
+
+.carousel {
+    margin-top: 55px;
+    height: 22rem;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cart-item {
+    color:#005270 !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+marquee.small {
+    color: red;
+}
+
+.online-live {
+    color: #005270;
+}
+
+.programs-panel {
+    margin-top: 1rem;
+}
+
+.tab-pane {
+    margin-top: 2rem;
+}
+
+.card-button {
+    padding: 1px;
+}
+
+.nav-link {
+    color: #005270;
+}
+
+.info {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.course-card {
+    height: 30rem;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.link-section {
+    background-color: #005270;
+    color: #fff;
+    padding: 2rem;
+}
+
+.link-item {
+    background-color: #005270;
+}
+
+.link {
+    color: #fff;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+.social-link {
+    padding-right: 10px;
+    color: #fff;
+}
+
+footer {
+    background-color: #005270;
+    border-top: 1px solid #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer {
+    color: #fff;
+}
+
+.mentors {
+    background-color: #005270;
+    padding: 3rem;
+}
+
+.mentor-tag {
+    color: #fff;
+}
+
+.card-img {
+    margin-left: 5rem;
+}
+
+.mentor-card {
+    height: 25rem;
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.testi-tag {
+    color: #005270;;
+}
+
+.test-card {
+    height: 10rem;
+}
+
+.card-test-img {
+    position: absolute;
+    margin-top: 2rem;    
+}

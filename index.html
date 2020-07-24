@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/b93d1150ce.js"></script>
+    <link 
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <title>GOF-Academy</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top p-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item header-tab">
+                        <a href="" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item header-tab">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#registerModal">Live Classes</a>
+                    </li>
+                    <li class="nav-item header-tab">
+                        <a href="" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item header-tab">
+                        <a href="" class="nav-link">Become Our Associate</a>
+                    </li>
+                    <li class="nav-item header-tab">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item cart-item">
+                        <i class="fa fa-cart-plus fa-2x"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary signup-button" data-toggle="modal" data-target="#signModal">SignIn/SignUp</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODALS -->
+
+    <!-- SignUp/SignIn Modal -->
+    <div class="modal fade" id="signModal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Sign-In</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter your Username/Mobile:" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Enter your Password:" class="form-control">
+                        </div>
+                        <button class="btn btn-primary btn-block" data-dismiss="modal">Sign-In</button><br>
+                        <div class="new-user">
+                            <a href="" data-toggle="modal" data-target="#registerModal">New user register here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Register for Live Demo classes</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Mobile No." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" aria-placeholder="Select Class">
+                                <option value="">Select Class</option>
+                                <option value="">Class 1</option>
+                                <option value="">Class 2</option>
+                                <option value="">Class 3</option>
+                                <option value="">Class 4</option>
+                                <option value="">Class 5</option>
+                                <option value="">Class 6</option>
+                                <option value="">Class 7</option>
+                                <option value="">Class 8</option>
+                                <option value="">Class 9</option>
+                                <option value="">Class 10</option>
+                                <option value="">Class 11</option>
+                                <option value="">Class 12</option>
+                                <option value="">12 Pass</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="School Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" aria-placeholder="Select State">
+                                <option value="">Select State</option>
+                                <option value="">Rajasthan</option>
+                                <option value="">Maharastra</option>
+                                <option value="">West Bengal</option>
+                                <option value="">Karnataka</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="City" class="form-control">
+                        </div>
+                        <button class="btn btn-primary btn-block" data-dismiss="modal">Submit</button><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Enquiry</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Mobile No." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" aria-placeholder="Select Class">
+                                <option value="">Select Class</option>
+                                <option value="">Class 1</option>
+                                <option value="">Class 2</option>
+                                <option value="">Class 3</option>
+                                <option value="">Class 4</option>
+                                <option value="">Class 5</option>
+                                <option value="">Class 6</option>
+                                <option value="">Class 7</option>
+                                <option value="">Class 8</option>
+                                <option value="">Class 9</option>
+                                <option value="">Class 10</option>
+                                <option value="">Class 11</option>
+                                <option value="">Class 12</option>
+                                <option value="">12 Pass</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="School Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" aria-placeholder="Select State">
+                                <option value="">Select State</option>
+                                <option value="">Rajasthan</option>
+                                <option value="">Maharastra</option>
+                                <option value="">West Bengal</option>
+                                <option value="">Karnataka</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="City" class="form-control">
+                        </div>
+                        <button class="btn btn-primary btn-block" data-dismiss="modal">Submit</button><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SHOWCASE-IMAGES -->
+    <div id="slider" class="carousel slide mb-10" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="images/carousel1.png" alt="first-slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/carousel2.png" alt="first-slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/carousel3.png" alt="first-slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/carousel4.png" alt="first-slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="images/carousel5.png" alt="first-slide">
+            </div>
+        </div>
+        <!-- CONTROLS -->
+        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- MARQUEE -->
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        <h3>
+            <a href=""><small>Click here to register for IIT-JEE/NEET demo Classes/Webinar</small></a>
+            &nbsp;  &nbsp;  &nbsp; || &nbsp;  &nbsp;  &nbsp; 
+            <a href=""><small>Click here to register for NTSE demo Classes/Webinar</small></a>
+        </h3>
+    </marquee>
+
+    <!-- ONLINE LIVE PROGRAMS PANEL -->
+    <div class="container programs-panel">
+        <h2 class="text-center font-weight-bold online-live">Online Live Programs</h2>
+    </div>
+
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#topCourses" role="tab">Top-Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#iitjee" role="tab">IIT-JEE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#neet" role="tab">NEET</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#ntse" role="tab">NTSE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#foundation" role="tab">Foundation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#cbsescience" role="tab">CBSE-Science</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#cbsecommerce" role="tab">CBSE-Commerce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#language" role="tab">Language</a>
+        </li>
+    </ul>
+    <!-- TOP-COURSES -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="topCourses" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- IIT-JEE -->
+        <div class="tab-pane fade" id="iitjee" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                <p>Subjects: Physics, Chemistry, Mathematics</p>
+                                <p>Duration: 1 year</br>
+                                  Eligibility: Class XII studying</br>
+                                  Mode: Online/Live</br>
+                                  Target Exams: JEE Mains & Advanced, CBSE Board</p> 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEET -->
+        <div class="tab-pane fade" id="neet" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NTSE -->
+        <div class="tab-pane fade" id="ntse" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOUNDATION -->
+        <div class="tab-pane fade" id="foundation" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CBSE-SCIENCE -->
+        <div class="tab-pane fade" id="cbsescience" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CBSE-COMMERCE -->
+        <div class="tab-pane fade" id="cbsecommerce" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LANGUAGE -->
+        <div class="tab-pane fade" id="language" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person1.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person2.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for NEET and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person3.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">SCHOOL INTEGRATED</h6>
+                              <p class="text-center">Program for IIT-JEE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card course-card">
+                            <img src="images/person4.png" alt="" class="img-fluid card-img-top">
+                            <div class="card-body">
+                              <h6 class="card-title text-center">ONE YEAR ONLINE LIVE</h6>
+                              <p class="text-center">Program for NTSE and Board</p>
+                              <hr>
+                              <small class="card-text">
+                                Subjects: Physics, Chemistry, Mathematics
+                                Duration: 1 year
+                                Eligibility: Class XII studying
+                                Mode: Online/Live
+                                Target Exams: JEE Mains & Advanced, CBSE Board 
+                              </small>
+                              <hr>
+                              <div class="row card-button">
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">View Details</button>
+                                  </div>
+                                  <div class="col card-button">
+                                    <button class="btn btn-dark btn-block">Add to Cart</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAIRMAN-WORDS -->
+    <div class="container info card">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="content">
+                <small>
+                    GOF Academy is the brain child of veteran educationist and IIT-Delhi graduate Er. U.P Singh. In his twenty five years of career in education field he served as Director in many All India fame Institutes. A passionate Physics faculty who became inspiration for thousands of students to achieve their goal. Two of his students Sahal Kaushik and Shivanand Tiwari cleared IIT at the age of fourteen and made history.
+                    <br>
+                    Under his guidance and with a highly dedicated team of distinguished national and international fame academicians, content developers and committed technical team, GOF Academy is providing smart educational tools and support to students, schools, colleges and other educational institutions in India.
+                </small>
+            </div>
+          </div>
+          <div class="col-md-6 image-container">
+            <img src="images/chairman.png" alt="" class="img-fluid">
+          </div>
+        </div>
+    </div>
+
+    <!-- OUR-MENTORS -->
+    <div class="mentors">
+      <div class="container">
+        <h2 class="text-center font-weight-bold mentor-tag">Our Mentors</h2>
+        <div class="wrapper">
+          <div class="testimonial-carousel section-padding owl-carousel">
+            <div class="card mentor-card mt-4">
+              <div class="card-body">
+                <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-img">
+                <h3 class="text-center">DEEPAK KALRA</h3>
+                <h5 class="text-muted text-center">B.Tech (IIT-Delhi)</h5>
+                <p class="leap text-center">Mathematician</p>
+                <p class="text-center">Maths HOD for various coaching institutes.<br>Ex-Director of Narayana Institute</p>
+              </div>
+            </div>
+            <div class="card mentor-card mt-4">
+              <div class="card-body">
+                <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-img">
+                <h3 class="text-center">AVDESH KUMAR</h3>
+                <h5 class="text-muted text-center">B.Tech</h5>
+                <p class="leap text-center">Chemistry Faculty</p>
+                <p class="text-center">
+                  Worked as a senior faculty in various coaching institutes.
+                  <br>
+                  Mentor of many IITians
+                </p>
+              </div>
+            </div>
+            <div class="card mentor-card mt-4">
+              <div class="card-body">
+                <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-img">
+                <h3 class="text-center">U. P. SINGH</h3>
+                <h5 class="text-muted text-center">B.Tech (IIT-Delhi)</h5>
+                <p class="leap text-center">CEO, GOF Academy</p>
+                <p class="text-center">
+                  Founder Director of Narayana IIT Academy, Dwarka.
+                  <br>
+                  Ex-Director of FIITJEE
+                </p>
+              </div>
+            </div>
+            <div class="card mentor-card mt-4">
+              <div class="card-body">
+                <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-img">
+                <h3 class="text-center">DEEPAK SINGH</h3>
+                <h5 class="text-muted text-center">M.B.A.(DU)</h5>
+                <p class="leap text-center">President, GOF Academy</p>
+                <p class="text-center">
+                  MAT Expert, Mentor of thousands of NTSE Scholars and JSTSE Scholars
+                  <br>
+                  Ex-Director of Narayana, Patna
+                </p>
+              </div>
+            </div>
+            <div class="card mentor-card mt-4">
+              <div class="card-body">
+                <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-img">
+                <h3 class="text-center">RAHUL SINGH</h3>
+                <h5 class="text-muted text-center">B.Tech</h5>
+                <p class="leap text-center">Chemistry Faculty</p>
+                <p class="text-center">
+                  Worked as a senior faculty in various coaching institutes.
+                  <br>
+                  HoD of Narayana, Patna
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
+      
+        <h2 class="text-center font-weight-bold testi-tag">Testimonials</h2>
+        <div class="wrapper">
+          <div class="testimonial-carousel section-padding owl-carousel">
+            <div class="card test-card mt-4">
+              <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-test-img">
+                </div>
+                <div class="col mt-1 mr-1 mb-1">
+                  Piyush Thomas<br>
+                  <small class="lead">Father</small>
+                  <br>
+                  <small>"I chose GOF Academy as it assures guarantee of placements as well as research options for students."</small>
+                </div>
+              </div>
+            </div>
+            <div class="card test-card mt-4">
+              <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-test-img">
+                </div>
+                <div class="col mt-1 mr-1 mb-1">
+                  Piyush Thomas<br>
+                  <small class="lead">Father</small>
+                  <br>
+                  <small>"I chose GOF Academy as it assures guarantee of placements as well as research options for students."</small>
+                </div>
+              </div>
+            </div>
+            <div class="card test-card mt-4">
+              <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-test-img">
+                </div>
+                <div class="col mt-1 mr-1 mb-1">
+                  Piyush Thomas<br>
+                  <small class="lead">Father</small>
+                  <br>
+                  <small>"I chose GOF Academy as it assures guarantee of placements as well as research options for students."</small>
+                </div>
+              </div>
+            </div>
+            <div class="card test-card mt-4">
+              <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-test-img">
+                </div>
+                <div class="col mt-1 mr-1 mb-1">
+                  Piyush Thomas<br>
+                  <small class="lead">Father</small>
+                  <br>
+                  <small>"I chose GOF Academy as it assures guarantee of placements as well as research options for students."</small>
+                </div>
+              </div>
+            </div>
+            <div class="card test-card mt-4">
+              <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="images/test-person.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3 card-test-img">
+                </div>
+                <div class="col mt-1 mr-1 mb-1">
+                  Piyush Thomas<br>
+                  <small class="lead">Father</small>
+                  <br>
+                  <small>"I chose GOF Academy as it assures guarantee of placements as well as research options for students."</small>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      
+    </div>
+    
+    <!-- LINKS-SECTION -->
+    <div class="link-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <div class="card border-0 link-item">
+                        <div class="card-body">
+                            <div class="card-title"><h5>COURSES</h5></div>
+                            <hr>
+                            <div class="card-text">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">IIT-JEE</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">NEET</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">NTSE</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Foundation</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">CBSE-Science</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">CBSE-Commerce</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Language</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 link-item">
+                        <div class="card-body">
+                            <div class="card-title"><h5>QUICK LINKS</h5></div>
+                            <hr>
+                            <div class="card-text">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Why-Us?</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Privacy Policy</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">NTSE-Scholars</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Global Olympiad</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">GOF Academy</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Global Pratibha School</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Global Pratibha Int. School</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Gurugram Welfare Society</a><br>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="" class="link">Udayan Eduction Pvt. Ltd.</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 link-item">
+                        <div class="card-body">
+                            <div class="card-title"><h5>DOWNLOAD APP</h5></div>
+                            <hr>
+                            <div class="card-text">
+                                <a href=""><img src="images/googleplay.png" alt=""></a><br><br>
+                                <a href=""><img src="images/appstore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 link-item">
+                        <div class="card-body">
+                            <img src="images/logo.png" alt="">
+                            <br>
+                            <br>
+                            <small>Address</small>
+                            <p>Plot No.-136A, Yadav Bhawan Lane, Sector 8 Dwarka, New Delhi-110077</p>
+                            <br>
+                            <small>Contact Numbers</small><br>
+                            <i class="fa fa-phone" aria-hidden="true"></i>  8700484442<br>
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>  9711667511<br>
+                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i>  9711667511<br>
+                            <br>
+                            <small>Email</small>
+                            <p>info@globalolympiad.com</p>
+                            <a href=""><i class="fa fa-facebook social-link" aria-hidden="true"></i></a> 
+                            <a href=""><i class="fa fa-twitter social-link" aria-hidden="true"></i></a> 
+                            <a href=""><i class="fa fa-google social-link" aria-hidden="true"></i></a> 
+                            <a href=""><i class="fa fa-youtube social-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+        <small class="footer">GOF Academy, Dwarka <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2018-2020. A Union of Udayan Education Private Limited</small>
+    </footer>
+
+    <!-- SCRIPT-TAGS -->
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js">
+    </script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+      $('.testimonial-carousel').owlCarousel({
+        loop:true,
+        margin:20,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+      })
+
+        //Get the current year for copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+</html>
